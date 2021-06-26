@@ -47,7 +47,7 @@ if [ -e $grise_conf_path ]
 then
 	location=$(cat $grise_conf_path)
 else
-	if [ loc_no_arg == 1 ]
+	if [ "$loc_no_arg" == 1 ]
 	then
 		echo -n "Location code (https://weather.codes): "
 		read location
